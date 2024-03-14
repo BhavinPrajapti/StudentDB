@@ -1,7 +1,7 @@
 # StudentDB
 The Student Database
 
-# Exercise 3.1: StudentDB
+## Exercise 3.1: StudentDB
 
 ![image](https://github.com/BhavinPrajapti/StudentDB/assets/133592139/d891509c-2062-41b7-97c2-1b2447294bb1)
 StudentDB_UML
