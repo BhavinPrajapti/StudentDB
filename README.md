@@ -58,19 +58,15 @@ Of course, we also want to read back the data. Add a method void read(std::istre
 
 Add commands for reading and writing to the class SimpleUI. The command queries the user for a file name, creates the file stream and invokes the read and write methods respectively. Note that as a consequence of the implementation hints outlined above, SimpleUI must not contain any code for reading or writing. It only invokes the respective methods of StudentDb. Not implementing the methods as outlined above results in 0 points for the submission.
 
-##Exercise 3.3: Obtaining test data
+## Exercise 3.3: Obtaining test data
 NOTE : This exercise requires a lot of research that leads to a comparatively small number of lines of code. The points that you get for this exercise will therefore be based mostly on your ability to answer questions during the review regarding your code (which must, of course, be working) and the Poco classes used. Of course, your are free to search the internet for samples about how to use the Poco classes. If you use code from such samples (other than from the Poco documentation), provide the link to the source as comment in your code.
 
 Host "www.hhs.users.h-da.cloud" provides on port 4242 a service for obtaining sample user data. It’s usage is basically similar to the usage of the time service shown in the lecture, with the exception that commands have to be sent in order to receive data.
 
 The server understands two commands generate and quit. Here’s a sample session with the data sent (→) and received by the client (←).
 
-→ generate
-← 100 Generating
-← {"cell":"(807)-365-2612", …
-← 200 Data generated.
-→ quit
-← 200 Closing connection. Bye bye!
+![image](https://github.com/BhavinPrajapti/StudentDB/assets/133592139/371ed411-2ad4-4da6-ae9f-c8d19adc23f2)
+
 Use a boost iostream for the connection to the server. Once established, it can be used like any other std::iostream.
 
 Note that the server has a timeout of 5 seconds. If no command is received within this time span, the connection is closed automatically.
