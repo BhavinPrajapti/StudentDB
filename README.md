@@ -39,7 +39,7 @@ There’s no prescribed format for the output of data. However, although this is
 
 Create a StudentDb and a SimpleUI in main and test your implementation.
 
-# Exercise 3.2: Persisting the Database
+## Exercise 3.2: Persisting the Database
 
 Write the database content to a file. The file format is derived from the commonly used CSV format (https://en.wikipedia.org/wiki/Comma-separated_values).
 
@@ -47,7 +47,8 @@ In order to store all data in one file, we first write a line with the number of
 
 Here’s a short example:
 
-CSV_Format
+![image](https://github.com/BhavinPrajapti/StudentDB/assets/133592139/4ebfe891-94f2-4e09-9a78-f07d3d869efb)
+CSV_Format/Txt_Format
 
 Implement writing by adding methods virtual void write(std::ostream& out) to Course and Student. Objects write a single line with their data to the ostream. The classes BlockCourse and WeeklyCourse write a character indicating the actual type followed by the data members of the base class and the derived class. Implement this by implementing Course::write in such a way that it writes the base class’s data without a line terminator (e.g. “5387;APT;Automation;5”) and call this method of the superclass from the derived classes after writing the leading type indicator and before writing the data members of the derived class.
 
@@ -57,7 +58,7 @@ Of course, we also want to read back the data. Add a method void read(std::istre
 
 Add commands for reading and writing to the class SimpleUI. The command queries the user for a file name, creates the file stream and invokes the read and write methods respectively. Note that as a consequence of the implementation hints outlined above, SimpleUI must not contain any code for reading or writing. It only invokes the respective methods of StudentDb. Not implementing the methods as outlined above results in 0 points for the submission.
 
-Exercise 3.3: Obtaining test data
+##Exercise 3.3: Obtaining test data
 NOTE : This exercise requires a lot of research that leads to a comparatively small number of lines of code. The points that you get for this exercise will therefore be based mostly on your ability to answer questions during the review regarding your code (which must, of course, be working) and the Poco classes used. Of course, your are free to search the internet for samples about how to use the Poco classes. If you use code from such samples (other than from the Poco documentation), provide the link to the source as comment in your code.
 
 Host "www.hhs.users.h-da.cloud" provides on port 4242 a service for obtaining sample user data. It’s usage is basically similar to the usage of the time service shown in the lecture, with the exception that commands have to be sent in order to receive data.
@@ -80,6 +81,7 @@ The generated data is provided in the JSON format (https://en.wikipedia.org/wiki
 
 Here’s a formatted sample output (picture data omitted):
 
+![image](https://github.com/BhavinPrajapti/StudentDB/assets/133592139/933d0d9a-5f64-4c06-a003-fe4892189858)
 JSON_Format_Output
 
 The boost JSON library provides classes for parsing this data.
