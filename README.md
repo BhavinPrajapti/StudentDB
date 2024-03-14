@@ -78,6 +78,7 @@ The generated data is provided in the JSON format (https://en.wikipedia.org/wiki
 Here’s a formatted sample output (picture data omitted):
 
 ![image](https://github.com/BhavinPrajapti/StudentDB/assets/133592139/933d0d9a-5f64-4c06-a003-fe4892189858)
+
 JSON_Format_Output
 
 The boost JSON library provides classes for parsing this data.
