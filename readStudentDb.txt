@@ -1,0 +1,10 @@
+2
+W;101;computer vision;Automation;5.0;4;10:0;11:45
+B;102;ACMI;Power;5.0;1.10.2023;2.2.2024;12:30;14:0
+2
+100000;Bhavin;Prajapati;1.12.1997;Herzogenriedstraﬂe 28;394221;Mannheim;
+100010;Bhavna;Prajapati;17.3.1978;GHB B612;395001;Surat;India
+3
+100000;101;ws2023;1.3
+100000;102;ws2023;1.0
+100010;101;ss2024;1.7
